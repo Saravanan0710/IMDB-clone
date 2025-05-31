@@ -1,5 +1,6 @@
-package com.akash.movies;
+package com.akash.movies.repo;
 
+import com.akash.movies.model.Movie;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
