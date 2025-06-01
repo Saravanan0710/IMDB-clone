@@ -15,11 +15,11 @@ public class MovieService {
     @Autowired
     private MovieRepository repo;
 
-    public List<Movie> getAllMovies() {
+    public List<Movie> getMovies() {
         return repo.findAll();
     }
 
-    public Optional<Movie> getMovieById(ObjectId id) {
-        return repo.findById(id);
+    public Optional<Movie> getMovieByImdbId(String imdbId) {
+        return repo.findMovieByImdbId(imdbId);
     }
 }
