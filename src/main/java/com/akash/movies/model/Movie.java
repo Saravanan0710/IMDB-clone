@@ -27,5 +27,5 @@ public class Movie {
     private List<String> backdrops;
 
     @DocumentReference
-    private List<String> reviewId;
+    private List<Review> reviewId;
 }
